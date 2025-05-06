@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Donation Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 p-6">
+
+  <h1 class="text-3xl font-bold mb-6">Blood Donation Dashboard</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+    <div class="bg-white p-6 rounded-xl shadow flex items-center justify-between">
+      <div>
+        <div class="text-sm text-gray-500">Active Donors</div>
+        <div class="text-2xl font-bold">421</div>
+      </div>
+      <div class="text-red-500 text-3xl">🩸</div>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow flex items-center justify-between">
+      <div>
+        <div class="text-sm text-gray-500">Pending Requests</div>
+        <div class="text-2xl font-bold">18</div>
+      </div>
+      <div class="text-yellow-400 text-3xl">🔔</div>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow flex items-center justify-between">
+      <div>
+        <div class="text-sm text-gray-500">Nearby Hospitals</div>
+        <div class="text-2xl font-bold">35</div>
+      </div>
+      <div class="text-blue-500 text-3xl">📍</div>
+    </div>
+  </div>
+  <div class="bg-white rounded-xl shadow mb-6">
+    <div class="p-4 border-b font-semibold text-lg">Recent Blood Requests</div>
+    <div class="divide-y">
+      <div class="p-4 flex justify-between">
+        <div>
+          <div class="font-medium">Blood Group: B+</div>
+          <div class="text-sm text-gray-500">City Hospital</div>
+        </div>
+        <div class="text-sm text-gray-400">3 mins ago</div>
+      </div>
+      <div class="p-4 flex justify-between">
+        <div>
+          <div class="font-medium">Blood Group: O-</div>
+          <div class="text-sm text-gray-500">Green Cross</div>
+        </div>
+        <div class="text-sm text-gray-400">15 mins ago</div>
+      </div>
+      <div class="p-4 flex justify-between">
+        <div>
+          <div class="font-medium">Blood Group: A+</div>
+          <div class="text-sm text-gray-500">Apollo</div>
+        </div>
+        <div class="text-sm text-gray-400">30 mins ago</div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <button class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded-xl">
+      View All Requests
+    </button>
+  </div>
+
+</body>
+</html>

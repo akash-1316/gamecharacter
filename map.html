@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Map Navigation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="w-full max-w-4xl p-6 bg-white shadow-xl rounded-lg">
+    <h2 class="text-2xl font-bold mb-4 text-red-600 text-center">Nearby Hospitals & Donors Map</h2>
+    <div id="map"></div>
+  </div>
+  <script>
+    function initMap() {
+      const center = { lat: 17.6868, lng: 83.2185 }; 
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 13,
+        center: center,
+      });
+
+      const hospitalMarker = new google.maps.Marker({
+        position: { lat: 17.688, lng: 83.22 },
+        map: map,
+        title: "Apollo Hospital",
+        icon: "https://maps.google.com/mapfiles/ms/icons/hospitals.png"
+      });
+
+      const donorMarker = new google.maps.Marker({
+        position: { lat: 17.684, lng: 83.215 },
+        map: map,
+        title: "Donor Available: O+",
+        icon: "https://maps.google.com/mapfiles/ms/icons/red-dot.png"
+      });
+    }
+  </script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ7YC5gvJ-_PQe6UnPxTG5V33NGLlsmN0&callback=initMap">
+  </script>
+
+</body>
+</html>

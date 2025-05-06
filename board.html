@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Request Form - BloodLink</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <div class="flex items-center space-x-3 mb-6">
+      <img src="https://static.vecteezy.com/system/resources/previews/024/801/312/non_2x/blood-drop-icon-design-the-medical-red-icon-with-blood-drop-pulse-icon-and-heart-icon-illustration-medical-set-with-red-color-free-png.png" alt="Logo" class="w-12 h-12">
+      <h1 class="text-2xl font-bold text-red-700">Hospital Blood Request Form</h1>
+    </div>
+
+    <form class="space-y-6">
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1">Hospital Name</label>
+        <input type="text" placeholder="e.g. City Hospital" class="w-full border border-gray-300 rounded p-2" required>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1">Hospital Registration ID</label>
+        <input type="text" placeholder="e.g. HOS123456" class="w-full border border-gray-300 rounded p-2" required>
+      </div>
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1">Required Blood Type</label>
+        <select class="w-full border border-gray-300 rounded p-2" required>
+          <option value="">-- Select Blood Type --</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1">Number of Units</label>
+        <input type="number" min="1" placeholder="e.g. 2" class="w-full border border-gray-300 rounded p-2" required>
+      </div>
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1">Hospital Location (Address)</label>
+        <textarea placeholder="Enter full address here..." class="w-full border border-gray-300 rounded p-2" rows="3" required></textarea>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1">Contact Number</label>
+        <input type="tel" placeholder="e.g. 9876543210" class="w-full border border-gray-300 rounded p-2" required>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-semibold mb-1">Urgency Level</label>
+        <select class="w-full border border-gray-300 rounded p-2" required>
+          <option value="">-- Select Urgency --</option>
+          <option value="low">Low</option>
+          <option value="moderate">Moderate</option>
+          <option value="high">High</option>
+          <option value="critical">Critical</option>
+        </select>
+      </div>
+
+      <div class="text-right">
+        <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">Submit Request</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

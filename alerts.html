@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notifications Panel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-2xl">
+    <h2 class="text-2xl font-bold text-red-600 mb-4 text-center">Notifications & Alerts</h2>
+
+    <ul class="space-y-4">
+      <li class="flex items-start gap-3 bg-red-100 border-l-4 border-red-500 p-4 rounded-md shadow-sm">
+        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M18.364 5.636L5.636 18.364M5.636 5.636l12.728 12.728" />
+        </svg>
+        <div>
+          <p class="font-semibold">Critical Need: O- blood required at Sunrise Hospital.</p>
+          <p class="text-sm text-gray-600">Posted just now</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-3 bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md shadow-sm">
+        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M12 20.5a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17z" />
+        </svg>
+        <div>
+          <p class="font-semibold">Reminder: You’re eligible to donate again!</p>
+          <p class="text-sm text-gray-600">Last donated: 3 months ago</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-3 bg-blue-100 border-l-4 border-blue-500 p-4 rounded-md shadow-sm">
+        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6 4a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+        </svg>
+        <div>
+          <p class="font-semibold">New Feature: Live donor map is now available.</p>
+          <p class="text-sm text-gray-600">Explore nearby donors and hospitals.</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+</body>
+</html>

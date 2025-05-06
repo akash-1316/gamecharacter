@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BloodLink - Donor Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <nav class="bg-red-600 p-4 text-white flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="https://static.vecteezy.com/system/resources/previews/024/801/312/non_2x/blood-drop-icon-design-the-medical-red-icon-with-blood-drop-pulse-icon-and-heart-icon-illustration-medical-set-with-red-color-free-png.png" alt="Logo" class="h-10 w-10">
+      <span class="text-2xl font-bold">BloodLink</span>
+    </div>
+    <span class="text-sm">Welcome, Donor!</span>
+  </nav>
+
+  <div class="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="lg:col-span-2">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Your Donation Summary</h2>
+        <div class="grid grid-cols-2 gap-4 text-center">
+          <div class="bg-red-100 p-4 rounded">
+            <p class="text-xl font-bold text-red-700">5</p>
+            <p class="text-sm text-gray-600">Total Donations</p>
+          </div>
+          <div class="bg-green-100 p-4 rounded">
+            <p class="text-xl font-bold text-green-700">Eligible</p>
+            <p class="text-sm text-gray-600">Next Donation</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow mt-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Live Alerts</h2>
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li class="bg-yellow-100 p-3 rounded">Urgent need for B+ blood at City Hospital (3 km away)</li>
+          <li class="bg-yellow-100 p-3 rounded">A- blood needed at Sunrise Medical Center</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Quick Actions</h2>
+        <div class="space-y-4">
+          <a href="#" class="block bg-red-600 hover:bg-red-700 text-white py-2 rounded text-center">Update Availability</a>
+          <a href="#" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 rounded text-center">View Map</a>
+          <a href="#" class="block bg-gray-600 hover:bg-gray-700 text-white py-2 rounded text-center">Edit Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center text-xs text-gray-500 mt-10 pb-4">
+    &copy; 2025 BloodLink. All rights reserved.
+  </footer>
+</body>
+</html>
